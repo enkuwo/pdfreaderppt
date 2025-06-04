@@ -3,266 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Reader - AI-Powered Document Processing</title>
+    <title>PDF Reader - AI Helper</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="presentation-container">
-        <!-- Navigation Header -->
-        <header class="presentation-header">
-            <div class="container flex justify-between items-center">
-                <h1 class="presentation-title">PDF Reader Presentation</h1>
-                <div class="slide-counter">
-                    <span id="current-slide">1</span> / <span id="total-slides">8</span>
+<div class="presentation-container">
+    <header class="presentation-header">
+        <div class="container flex justify-between items-center">
+            <h1 class="presentation-title">PDF Reader Presentation</h1>
+            <div class="slide-counter">
+                <span id="current-slide">1</span> / <span id="total-slides">8</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="slides-container">
+        <section class="slide active" data-slide="1">
+            <div class="container slide-content">
+                <h2>Welcome to PDF Reader</h2>
+                <p>This tool uses AI to make PDF files easier to read and understand. It is made with Python, HTML, CSS, and JavaScript.</p>
+                <p>You can see the full project here: <a href="https://github.com/enkuwo/pdfreader" target="_blank">GitHub Link</a></p>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="2">
+            <div class="container slide-content">
+                <h2>What’s the Problem?</h2>
+                <ul class="challenge-list">
+                    <li>Reading long PDFs takes a lot of time</li>
+                    <li>It’s hard to find the important parts</li>
+                    <li>Language can be a barrier</li>
+                    <li>Normal PDF apps don’t give summaries</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="3">
+            <div class="container slide-content">
+                <h2>Our AI Solution</h2>
+                <ul class="feature-list">
+                    <li>Uses Gemma AI to read text (even scanned files)</li>
+                    <li>Summarizes by full file, by page, or in parts</li>
+                    <li>Supports many languages</li>
+                    <li>Makes it easier for everyone to understand PDFs</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="4">
+            <div class="container slide-content">
+                <h2>Main Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Text Extraction</h3>
+                        <p>Reads both normal and scanned PDF files</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>AI Summarizer</h3>
+                        <p>Summarizes full text or each page</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Search</h3>
+                        <p>Helps find keywords fast</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Charts</h3>
+                        <p>Shows data as charts or tables</p>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <!-- Slides Container -->
-        <main class="slides-container">
-            <!-- Slide 1: Introduction -->
-            <section class="slide active" data-slide="1">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>Introduction to PDF Reader</h2>
-                        <div class="slide-body">
-                            <p>The PDF Reader application is an open-source solution that combines modern web technologies with artificial intelligence to revolutionize document processing workflows. Built primarily with Python (43.7%), HTML (33.0%), CSS (15.4%), and JavaScript (4.3%), this web application transforms static PDFs into interactive, analyzable content.</p>
-                            <p>The application is hosted on GitHub at <a href="https://github.com/enkuwo/pdfreader" target="_blank">https://github.com/enkuwo/pdfreader</a>, offering complete transparency and customizability for developers looking to extend its capabilities.</p>
-                        </div>
-                    </div>
+        <section class="slide" data-slide="5">
+            <div class="container slide-content">
+                <h2>What is our Structure</h2>
+                <p>Here’s the structure of our PDF Reader project 📁:</p>
+                <div class="ai-buttons-grid">
+                    <p>├── 📁 static</p>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="appjs">📜 app.js</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="stylecss">🎨 style.css</button>
                 </div>
-            </section>
-
-            <!-- Slide 2: The Challenge -->
-            <section class="slide" data-slide="2">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>The Challenge with Traditional PDF Processing</h2>
-                        <div class="slide-body">
-                            <p>Traditional PDF handling presents numerous challenges that impact productivity and information accessibility:</p>
-                            <ul class="challenge-list">
-                                <li>Manual document analysis is extremely time-consuming, often requiring hours to extract specific information from large documents</li>
-                                <li>Finding relevant content within lengthy PDFs remains difficult even with basic search functionality</li>
-                                <li>Language barriers significantly limit document accessibility across global teams</li>
-                                <li>Traditional PDF readers lack intelligent summarization capabilities, forcing users to read entire documents to grasp key concepts</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="ai-buttons-grid">
+                    <p>├── 📁 templates</p>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="upload">📄 upload.html</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="result">📄 result.html</button>
                 </div>
-            </section>
-
-            <!-- Slide 3: AI-Powered Solution -->
-            <section class="slide" data-slide="3">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>AI-Powered Solution Overview</h2>
-                        <div class="slide-body">
-                            <p>The PDF Reader web application addresses these challenges through a comprehensive AI-powered approach to document processing:</p>
-                            <ul class="feature-list">
-                                <li>Leverages Google's Gemma AI model for intelligent text extraction with OCR fallback capabilities</li>
-                                <li>Offers multiple summarization modes (full, page-wise, and group-wise) to accommodate different user needs</li>
-                                <li>Enhanced with multi-language support and translation features</li>
-                                <li>Breaks down language barriers in document accessibility</li>
-                            </ul>
-                        </div>
-                    </div>
+                <p>├── 🧠 app.py</p>
+                <div class="ai-buttons-grid">
+                    <button class="btn btn--primary ai-feature-btn" data-feature="docker">🐳 Dockerfile</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="require">📦 requirements.txt</button>
                 </div>
-            </section>
 
-            <!-- Slide 4: Core Features -->
-            <section class="slide" data-slide="4">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>Core Features & Capabilities</h2>
-                        <div class="slide-body">
-                            <div class="features-grid">
-                                <div class="feature-card">
-                                    <h3>Smart Text Extraction</h3>
-                                    <p>Combines PyPDF2 with OCR fallback to ensure reliable content extraction from both digital and scanned documents</p>
-                                </div>
-                                <div class="feature-card">
-                                    <h3>AI-Powered Summarization</h3>
-                                    <p>Multiple modes including full document overviews, page-by-page analysis, and grouped page summaries</p>
-                                </div>
-                                <div class="feature-card">
-                                    <h3>Keyword Search & Analysis</h3>
-                                    <p>Automatically identifies and highlights the most relevant sections based on specified terms</p>
-                                </div>
-                                <div class="feature-card">
-                                    <h3>Data Visualization</h3>
-                                    <p>Specialized extraction and visualization capabilities to identify trends and patterns in numerical data</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Slide 5: AI Technology Integration (Interactive) -->
-            <section class="slide" data-slide="5">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>AI Technology Integration</h2>
-                        <div class="slide-body">
-                            <p>The application's intelligence is powered by cutting-edge AI technologies integrated throughout the processing pipeline. Click on any button below to view the actual code implementation:</p>
-                            
-                            <div class="ai-buttons-grid">
-                                <button class="btn btn--primary ai-feature-btn" data-feature="gemma">
-                                    🤖 Gemma AI Summarization
-                                </button>
-                                <button class="btn btn--primary ai-feature-btn" data-feature="language">
-                                    🌐 Language Detection
-                                </button>
-                                <button class="btn btn--primary ai-feature-btn" data-feature="translation">
-                                    🔄 Translation Functionality
-                                </button>
-                                <button class="btn btn--primary ai-feature-btn" data-feature="ocr">
-                                    📄 OCR Capabilities
-                                </button>
-                                <button class="btn btn--primary ai-feature-btn" data-feature="qa">
-                                    ❓ Q&A Functionality
-                                </button>
-                            </div>
-
-                            <!-- Code Display Modal -->
-                            <div id="code-modal" class="code-modal hidden">
-                                <div class="code-modal-content">
-                                    <div class="code-modal-header">
-                                        <h3 id="code-title">Code Implementation</h3>
-                                        <button class="btn btn--secondary" id="close-code">✕ Close</button>
-                                    </div>
-                                    <div class="code-modal-body">
-                                        <pre><code id="code-content"></code></pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Slide 6: Technical Architecture -->
-            <section class="slide" data-slide="6">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>Technical Architecture</h2>
-                        <div class="slide-body">
-                            <p>The application is built on a robust technical foundation that balances performance with accessibility:</p>
-                            <div class="architecture-stack">
-                                <div class="stack-layer">
-                                    <h3>Backend Framework</h3>
-                                    <p>Python Flask framework for lightweight yet powerful web server capabilities</p>
-                                </div>
-                                <div class="stack-layer">
-                                    <h3>AI Integration</h3>
-                                    <p>Google Generative AI library, specifically implementing the Gemma model for natural language understanding</p>
-                                </div>
-                                <div class="stack-layer">
-                                    <h3>Document Processing</h3>
-                                    <p>Multiple libraries including PyPDF2, PIL, and FPDF for various aspects of PDF manipulation</p>
-                                </div>
-                                <div class="stack-layer">
-                                    <h3>Deployment</h3>
-                                    <p>Containerized using Docker for consistent deployment across different environments</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Slide 7: Competitive Advantages -->
-            <section class="slide" data-slide="7">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>Competitive Advantages</h2>
-                        <div class="slide-body">
-                            <div class="advantages-list">
-                                <div class="advantage-item">
-                                    <div class="advantage-icon">💰</div>
-                                    <div class="advantage-content">
-                                        <h3>Cost-Effective</h3>
-                                        <p>Free open-source solution that eliminates cost barriers while maintaining professional-grade functionality</p>
-                                    </div>
-                                </div>
-                                <div class="advantage-item">
-                                    <div class="advantage-icon">🔒</div>
-                                    <div class="advantage-content">
-                                        <h3>Privacy-Focused</h3>
-                                        <p>Balances local processing with cloud AI benefits, providing privacy for sensitive documents</p>
-                                    </div>
-                                </div>
-                                <div class="advantage-item">
-                                    <div class="advantage-icon">🔧</div>
-                                    <div class="advantage-content">
-                                        <h3>Multi-Modal Processing</h3>
-                                        <p>Handles various document types and formats through a unified interface</p>
-                                    </div>
-                                </div>
-                                <div class="advantage-item">
-                                    <div class="advantage-icon">📤</div>
-                                    <div class="advantage-content">
-                                        <h3>Flexible Export</h3>
-                                        <p>Customizable export options in preferred formats including PDF and Word documents</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Slide 8: Future Roadmap -->
-            <section class="slide" data-slide="8">
-                <div class="container">
-                    <div class="slide-content">
-                        <h2>Future Development Roadmap</h2>
-                        <div class="slide-body">
-                            <div class="roadmap-timeline">
-                                <div class="roadmap-item">
-                                    <h3>Enhanced AI Integration</h3>
-                                    <p>Introduction of more advanced language models for improved summarization and Q&A quality</p>
-                                </div>
-                                <div class="roadmap-item">
-                                    <h3>Batch Processing</h3>
-                                    <p>Capability to analyze multiple documents simultaneously for large-scale processing</p>
-                                </div>
-                                <div class="roadmap-item">
-                                    <h3>Advanced Visualization</h3>
-                                    <p>Better representations of document data, particularly for numerical and statistical content</p>
-                                </div>
-                                <div class="roadmap-item">
-                                    <h3>Mobile Application</h3>
-                                    <p>Platform extension to smartphones and tablets for document processing on the go</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Navigation Controls -->
-        <nav class="presentation-nav">
-            <div class="container flex justify-between items-center">
-                <button class="btn btn--outline nav-btn" id="prev-btn">← Previous</button>
                 
-                <div class="slide-dots">
-                    <button class="dot active" data-slide="1"></button>
-                    <button class="dot" data-slide="2"></button>
-                    <button class="dot" data-slide="3"></button>
-                    <button class="dot" data-slide="4"></button>
-                    <button class="dot" data-slide="5"></button>
-                    <button class="dot" data-slide="6"></button>
-                    <button class="dot" data-slide="7"></button>
-                    <button class="dot" data-slide="8"></button>
-                </div>
-                
-                <button class="btn btn--primary nav-btn" id="next-btn">Next →</button>
             </div>
-        </nav>
+        </section>
+
+        <section class="slide" data-slide="6">
+            <div class="container slide-content">
+                <h2>How AI is Used in App.py</h2>
+                <p>Click a button below to see real code from our app:</p>
+                <div class="ai-buttons-grid">
+                    <button class="btn btn--primary ai-feature-btn" data-feature="gemma">🤖 Gemma AI Summary</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="language">🌐 Language Check</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="translation">🔄 Translate</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="ocr">📄 OCR (Image Text Reader)</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="qa">❓ Ask PDF Questions</button>
+                    <button class="btn btn--primary ai-feature-btn" data-feature="illus">📚 Illustration Mode</button>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="slide" data-slide="7">
+            <div class="container slide-content">
+                <h2>How the App Works</h2>
+                <div class="architecture-stack">
+                    <div class="stack-layer">
+                        <h3>🧠 Backend</h3>
+                        <p>Python Flask – runs the main app</p>
+                    </div>
+                    <div class="stack-layer">
+                        <h3>🤖 AI</h3>
+                        <p>Gemma AI helps understand and summarize text</p>
+                    </div>
+                    <div class="stack-layer">
+                        <h3>📄 PDF Tools</h3>
+                        <p>Libraries like PyPDF2 and OCR read the PDFs</p>
+                    </div>
+                    <div class="stack-layer">
+                        <h3>🚢 Deployment</h3>
+                        <p>Docker makes it easy to run anywhere</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="8">
+            <div class="container slide-content">
+                <h2>Why It’s Good</h2>
+                <div class="advantages-list">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">💸</div>
+                        <div class="advantage-content">
+                            <h3>Free to Use</h3>
+                            <p>Open-source, so no cost</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🔒</div>
+                        <div class="advantage-content">
+                            <h3>Private</h3>
+                            <p>Your files stay with you</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🛠️</div>
+                        <div class="advantage-content">
+                            <h3>All-in-One</h3>
+                            <p>It reads, summarizes, and shows your data</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">📤</div>
+                        <div class="advantage-content">
+                            <h3>Easy Export</h3>
+                            <p>Save results as PDF or Word</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="9">
+            <div class="container slide-content">
+                <h2>What’s Next?</h2>
+                <div class="roadmap-timeline">
+                    <div class="roadmap-item">
+                        <h3>📱 Mobile Version</h3>
+                        <p>Use on phones and tablets</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>📚 Batch Reading</h3>
+                        <p>Upload and summarize many PDFs at once</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>🧠 Better AI</h3>
+                        <p>Try faster and smarter models</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>📄 Better Illustration</h3>
+                        <p>Illustrate more accurately</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="presentation-nav">
+        <div class="container flex justify-between items-center">
+            <button class="btn btn--outline nav-btn" id="prev-btn">← Previous</button>
+
+            <div class="slide-dots">
+                <button class="dot active" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+                <button class="dot" data-slide="4"></button>
+                <button class="dot" data-slide="5"></button>
+                <button class="dot" data-slide="6"></button>
+                <button class="dot" data-slide="7"></button>
+                <button class="dot" data-slide="8"></button>
+                <button class="dot" data-slide="9"></button>
+            </div>
+
+            <button class="btn btn--primary nav-btn" id="next-btn">Next →</button>
+        </div>
+    </nav>
+</div>
+<script src="app.js"></script>
+<div id="code-modal" class="code-modal hidden">
+    <div class="code-modal-content">
+        <div class="code-modal-header">
+            <h3 id="code-title">Code Example</h3>
+            <button class="btn btn--secondary" id="close-code">✕ Close</button>
+        </div>
+        <div class="code-modal-body">
+            <pre><code id="code-content"></code></pre>
+        </div>
     </div>
+</div>
 
-    <script src="app.js"></script>
 </body>
 </html>
